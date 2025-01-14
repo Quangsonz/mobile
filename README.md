@@ -39,3 +39,4 @@ Cần định nghĩa thêm các phương thức như renderSectionHeader để h
 Dễ bị nhầm lẫn khi cấu trúc dữ liệu không đúng.
 
 Ảnh Demo:
+![image](https://github.com/user-attachments/assets/2256a904-2f55-41bb-8004-6fc9c9b9478b)
