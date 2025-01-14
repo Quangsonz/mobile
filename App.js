@@ -1,20 +1,32 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { ScrollView, StyleSheet, Text } from 'react-native';
+import FlatListExample from './FlatListExample';
+import SectionListExample from './SectionListExample';
 
-export default function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ScrollView style={styles.container}>
+      <Text style={styles.title}>React Native List Examples</Text>
+      {/* FlatList Component */}
+      <FlatListExample />
+      {/* SectionList Component */}
+      <SectionListExample />
+    </ScrollView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    padding: 20,
+    backgroundColor: '#f8f9fa',
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    textAlign: 'center',
   },
 });
+
+export default App;
